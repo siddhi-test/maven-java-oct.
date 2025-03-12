@@ -2,9 +2,9 @@ node{
 
 def maven = tool name: "latest"
 
-echo "node running name: $(env.NODE_NAME) "
+echo "node running name: ${env.NODE_NAME} "
 
-echo "job name:  $(env.JOB_NAME) "
+echo "job name:  ${env.JOB_NAME} "
 
 //checkout stage
 stage('checkout'){
