@@ -9,7 +9,7 @@ stage('checkout'){
 //build stage
 stage('building'){
 sh "$maven/bin/mvn clean package"
-
+/*
 //sonarqube report
 stage ('sonarqubereport'){
 sh "$maven/bin/mvn sonar:sonar"
@@ -20,7 +20,7 @@ sh "$maven/bin/mvn sonar:sonar"
 stage ('nexus upload'){
 sh "$maven/bin/mvn deploy"
 }
-
+*/
 
 }
 }//Node closing
