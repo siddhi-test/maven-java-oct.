@@ -11,6 +11,8 @@ properties([pipelineTriggers([pollSCM('* * * * *')])])
 
 buildName 'Dev - ${BUILD_NUMBER}'
 
+buildDescription 'this is for testing pipeline for oct batch'
+
 //checkout stage
 stage('checkout'){
 
