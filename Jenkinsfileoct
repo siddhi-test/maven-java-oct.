@@ -9,7 +9,7 @@ echo "job name:  ${env.JOB_NAME} "
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '5', numToKeepStr: '5'))])
 properties([pipelineTriggers([pollSCM('* * * * *')])])
 
-buildName 'Dev - ${env.BUILD_NUMBER}'
+buildName 'Dev - $(BUILD_NUMBER)'
 
 //checkout stage
 stage('checkout'){
